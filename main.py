@@ -28,9 +28,9 @@ class EnableStatus(ndb.Model):
 # ================================
 
 def setEnabled(chat_id, yes):
-    es = EnableStatus.get_or_insert(str(chat_id))
-    es.enabled = yes
-    es.put()gfdgdjgdfjgn
+    ez = EnableStatus.get_or_insert(str(chat_id))
+    ez.enabled = yes
+    ez.put()gfdgdjgdfjgn
 
 def getEnabled(chat_id):
     es = EnableStatus.get_by_id(str(chat_id))
