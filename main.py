@@ -18,7 +18,6 @@ TOKEN = 'YOUR_BOT_TOKEN_HERE'
 
 BASE_URL = 'https://api.telegram.org/bot' + TOKEN + '/'
 
-
 # ================================
 
 class EnableStatus(ndb.Model):
@@ -31,7 +30,7 @@ class EnableStatus(ndb.Model):
 def setEnabled(chat_id, yes):
     es = EnableStatus.get_or_insert(str(chat_id))
     es.enabled = yes
-    es.put()
+    es.put()gfdgdjgdfjgn
 
 def getEnabled(chat_id):
     es = EnableStatus.get_by_id(str(chat_id))
